@@ -5,14 +5,40 @@
   <title>Kushan Patel</title>
   <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
   <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:700,100,400|Roboto:400,700|Playfair+Display+SC:400,700" rel="stylesheet" type="text/css">
+
 
 </head>
 <body>
 <app-root></app-root>
 </body>
+
+<!--<script src="assets/js/hipster-cards.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>-->
+
+<script>
+
+  $().ready(function(){
+
+    var $container = $('.masonry-container');
+
+    doc_width = $(document).width();
+
+    if (doc_width >= 768){
+      $container.masonry({
+        itemSelector        : '.card-box',
+        columnWidth         : '.card-box',
+        transitionDuration  : 0
+      });
+    } else {
+      $('.mas-container').removeClass('mas-container').addClass('row');
+    }
+  });
+</script>
+
 </html>
