@@ -1,5 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterContentInit, Component, OnInit} from '@angular/core';
 import {RestService} from "../rest.service";
+// import * as $ from 'jquery';
+declare var $: any;
 
 // @ts-ignore
 @Component({
@@ -8,18 +10,28 @@ import {RestService} from "../rest.service";
   styleUrls: ['../app.component.css']
 })
 
-export class HomeComponent implements OnInit{
-  clearanceLevel: string;
-  firstName = 'Kushan';
-  lastName = 'Patel';
+export class HomeComponent implements OnInit {
 
   constructor(private restService: RestService) {
 
   }
 
   ngOnInit(): void {
-    this.restService.getFromUrl('hello-world').then(resp => {this.clearanceLevel = resp.content});
-  }
+    $().ready(function(){
+      let $container = $('.masonry-container');
 
+      let doc_width = $(document).width();
+
+      if (doc_width >= 768) {
+        $container.masonry({
+          itemSelector: '.card-box',
+          columnWidth: '.card-box',
+          transitionDuration: 500
+        });
+      } else {
+        $('.mas-container').removeClass('mas-container').addClass('row');
+      }
+    });
+  }
 
 }

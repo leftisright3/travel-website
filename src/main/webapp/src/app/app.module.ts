@@ -7,6 +7,8 @@ import {RestService} from './rest.service';
 import {HttpModule} from '@angular/http';
 import {AppRoutingModule} from './app.routing';
 import {HomeComponent} from './home/home.component';
+import {MapComponent} from "./map/map.component";
+import {AboutComponent} from "./about/about.component";
 
 @NgModule({
   imports: [
@@ -18,6 +20,8 @@ import {HomeComponent} from './home/home.component';
   declarations: [
     AppComponent,
     HomeComponent,
+    MapComponent,
+    AboutComponent
   ],
   providers: [RestService],
   bootstrap: [AppComponent]
