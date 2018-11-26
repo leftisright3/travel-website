@@ -1,0 +1,19 @@
+<div class="card-box col" *ngFor="let section of entry.sections">
+  <div class="card card-full">
+    <!-- Uncomment to add image to the "section"; change height to height of image
+    <div class="header" style="height: 520px;">
+      <div class="filter">{{entry.title}}</div>
+    </div>
+    -->
+
+    <div class="content">
+      <h6 class="category" style="cursor: pointer">{{entry.name}}</h6>
+      <h4 class="title"><a style="cursor: pointer">{{entry.heading}}</a></h4>
+      <p>{{entry.description}}</p>
+      <p class="description mx-auto" style="width: 785px !important;">
+        <iframe class="mx-auto" style="height: 500px; width: 785px" [src]="sanitizer.bypassSecurityTrustResourceUrl(section.videoLink)" frameborder="0" allowfullscreen></iframe>
+      </p>
+      <p>{{entry.description}}</p>
+    </div>
+  </div> <!-- end card -->
+</div>

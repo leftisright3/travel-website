@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './home/home.component';
 import {MapComponent} from "./map/map.component";
 import {AboutComponent} from "./about/about.component";
+import {EntryComponent} from "./entry/entry.component";
 
 export const routes: Routes = [
   {
@@ -32,6 +33,13 @@ export const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent,
+    data: {
+      title: ''
+    }
+  },
+  {
+    path: 'entry/:entryId',
+    component: EntryComponent,
     data: {
       title: ''
     }

@@ -9,6 +9,7 @@ import {AppRoutingModule} from './app.routing';
 import {HomeComponent} from './home/home.component';
 import {MapComponent} from "./map/map.component";
 import {AboutComponent} from "./about/about.component";
+import {EntryComponent} from "./entry/entry.component";
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import {AboutComponent} from "./about/about.component";
     AppComponent,
     HomeComponent,
     MapComponent,
-    AboutComponent
+    AboutComponent,
+    EntryComponent
   ],
   providers: [RestService],
   bootstrap: [AppComponent]

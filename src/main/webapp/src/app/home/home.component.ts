@@ -2,6 +2,7 @@ import {AfterContentInit, Component, OnInit} from '@angular/core';
 import {RestService} from "../rest.service";
 import {Entry} from "../objects/entry";
 import {ENTRIES} from "../objects/entries";
+import {Router} from "@angular/router";
 // import * as $ from 'jquery';
 declare var $: any;
 
@@ -15,7 +16,8 @@ export class HomeComponent implements OnInit {
 
   entries: Entry[];
 
-  constructor(private restService: RestService) {
+  constructor(private restService: RestService,
+              private router: Router) {
     this.entries = ENTRIES;
   }
 
@@ -37,4 +39,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  navigateToArticle(entry: Entry): void {
+    this.router.navigate(['entry', entry.id]);
+  }
 }
