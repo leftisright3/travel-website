@@ -5,7 +5,6 @@ declare var $: any;
 
 // @ts-ignore
 @Component({
-  selector: 'app-root',
   templateUrl: './home.component.html',
   styleUrls: ['../app.component.css']
 })
