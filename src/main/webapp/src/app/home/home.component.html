@@ -1,106 +1,36 @@
 <div class="masonry-container">
 
 
-  <div class="card-box col-md-4 col-sm-6">
+  <div class="card-box col-md-4 col-sm-6" *ngFor="let entry of entries">
     <div class="card">
       <div class="header">
-        <img src="assets/img/cayman_scuba.jpg"/>
+        <img src="{{entry.image}}"/>
         <div class="filter"></div>
         <div class="actions">
           <button class="btn btn-round btn-fill btn-neutral btn-modern">
-            Read Article
+            Read
           </button>
         </div>
       </div>
 
       <div class="content">
-        <h6 class="category">Grand Cayman Islands</h6>
-        <h4 class="title"><a href="#">My first ever international trip!</a></h4>
+        <h6 class="category">{{entry.title}}</h6>
+        <h4 class="title"><a href="#">{{entry.heading}}</a></h4>
         <p class="description">
-          Tropical adventures include a jet ski safari tour, dolphin encounter, and scuba diving a WWII wreck!
+          {{entry.description}}
         </p>
       </div>
     </div> <!-- end card -->
   </div>
 
   <div class="card-box col-md-4 col-sm-6">
-    <div class="card">
-      <div class="header">
-        <img src="assets/img/cayman_sunset.jpg"/>
-        <div class="filter"></div>
-
-        <div class="actions">
-          <button class="btn btn-round btn-fill btn-neutral btn-modern">
-            Read Article
-          </button>
-        </div>
-      </div>
-
-      <div class="content">
-        <h6 class="category">Hawaii</h6>
-        <h4 class="title"><a href="#">Palm Trees, Pools, and Luaus</a></h4>
-        <p class="description">
-          For work, I was required to travel to Pearl Harbor in Hawaii. So naturally, I turned that into a solo trip full of activity.
-          Adventures/activities include lodging on a boat, rainforest hikes, and scuba dives.
-        </p>
-      </div>
-    </div> <!-- end card -->
+  <div class="card card-with-border card-just-text" data-background="color" data-color="black" >
+  <div class="content">
+  <h4 class="title">"In the end we only <b>regret</b> the chances we didn't take."</h4>
+  <p class="description">- Hipster Quote</p>
   </div>
-
-  <div class="card-box col-md-4 col-sm-6">
-    <div class="card">
-      <div class="header">
-        <img src="assets/img/glacier.jpg"/>
-        <div class="filter"></div>
-
-        <div class="actions">
-          <button class="btn btn-round btn-fill btn-neutral btn-modern">
-            Read Article
-          </button>
-        </div>
-      </div>
-
-      <div class="content">
-        <h6 class="category">Switzerland</h6>
-        <h4 class="title"><a href="#">Snow, Ice, and Jagged Rock Formations</a></h4>
-        <p class="description">
-          Glaciers and mountains galore, Switzerland is one of the most beautiful countries in the world. From grassy meadows with happy cows to dangerous snow-capped peaks,
-          this country is an outdoors enthusiast's paradise.
-        </p>
-      </div>
-    </div> <!-- end card -->
+  </div> <!-- end card -->
   </div>
-
-  <div class="card-box col-md-4 col-sm-6">
-    <div class="card">
-      <div class="header">
-        <img src="assets/img/maine.jpg"/>
-        <div class="filter"></div>
-
-        <div class="actions">
-          <button class="btn btn-round btn-fill btn-neutral btn-modern">
-            Read Article
-          </button>
-        </div>
-      </div>
-
-      <div class="content">
-        <h6 class="category">Yosemite</h6>
-        <h4 class="title"><a href="#">Granite, Half-Dome, and Waterfalls</a></h4>
-        <p class="description">
-          The Half Dome Cable Route hike runs from the valley floor to the top of the dome in 8.2 mi (13 km), with 4,800 ft (1,460 m) of elevation gain.
-        </p>
-      </div>
-    </div> <!-- end card -->
-  </div>
-  <!--<div class="card-box col-md-4 col-sm-6">-->
-  <!--<div class="card card-with-border card-just-text" data-background="color" data-color="black" >-->
-  <!--<div class="content">-->
-  <!--<h4 class="title">"In the end we only <b>regret</b> the chances we didn't take."</h4>-->
-  <!--<p class="description">- Hipster Quote</p>-->
-  <!--</div>-->
-  <!--</div> &lt;!&ndash; end card &ndash;&gt;-->
-  <!--</div>-->
 
 
 

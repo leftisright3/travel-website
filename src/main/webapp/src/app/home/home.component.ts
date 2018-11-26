@@ -1,5 +1,7 @@
 import {AfterContentInit, Component, OnInit} from '@angular/core';
 import {RestService} from "../rest.service";
+import {Entry} from "../objects/entry";
+import {ENTRIES} from "../objects/entries";
 // import * as $ from 'jquery';
 declare var $: any;
 
@@ -11,8 +13,10 @@ declare var $: any;
 
 export class HomeComponent implements OnInit {
 
-  constructor(private restService: RestService) {
+  entries: Entry[];
 
+  constructor(private restService: RestService) {
+    this.entries = ENTRIES;
   }
 
   ngOnInit(): void {
