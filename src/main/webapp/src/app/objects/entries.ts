@@ -9,8 +9,8 @@ export const ENTRIES: Entry[] = [
         title: '',
         heading: '',
         subHeading: '',
-        videoLink: 'https://www.youtube.com/embed/GiRlYbNAES0',
-        imageUrl: 'assets/img/glacier.jpg',
+        videoLink: 'GiRlYbNAES0',
+        imageUrl: 'glacier.jpg',
         content: 'We landed in Geneva on a Wedesday. Took a train from Geneva to Verbier. Gondola ride from the bottom of the mountain to the base of the resort. ' +
           'One whole day of snowboarding and that\'s it. I suffered an injury in the afternoon from a bad fall and had to call it a day early.'
       }
@@ -23,7 +23,7 @@ export const ENTRIES: Entry[] = [
     heading: 'Snow, Ice, and Jagged Rock Formations',
     description: 'Glaciers and mountains galore, Switzerland is one of the most beautiful countries in the world. From grassy meadows with happy cows to dangerous snow-capped peaks,\n' +
       ' this country is an outdoors enthusiast\'s paradise.',
-    thumbnail: 'assets/img/glacier.jpg'
+    thumbnail: 'glacier.jpg'
   },
 
 
@@ -35,8 +35,8 @@ export const ENTRIES: Entry[] = [
         title: '',
         heading: '',
         subHeading: '',
-        videoLink: 'https://www.youtube.com/embed/FDlvubr5CQE',
-        imageUrl: 'assets/img/sky_sunset.jpg',
+        videoLink: 'FDlvubr5CQE',
+        imageUrl: 'sky_sunset.jpg',
         content: ''
       }
     ],
@@ -47,7 +47,7 @@ export const ENTRIES: Entry[] = [
     title: 'Grand Cayman Islands',
     heading: 'My first ever international trip!',
     description: 'Tropical adventures include a jet ski safari tour, dolphin encounter, and scuba diving a WWII wreck!',
-    thumbnail: 'assets/img/sky_sunset.jpg'
+    thumbnail: 'cayman_sunset.jpg'
   },
 
 
@@ -59,8 +59,8 @@ export const ENTRIES: Entry[] = [
         title: '',
         heading: '',
         subHeading: '',
-        videoLink: 'https://www.youtube.com/embed/PHZJvQZk2Yw',
-        imageUrl: 'assets/img/cayman_sunset.jpg',
+        videoLink: 'PHZJvQZk2Yw',
+        imageUrl: 'cayman_sunset.jpg',
         content: ''
       }
     ],
@@ -72,20 +72,20 @@ export const ENTRIES: Entry[] = [
     heading: 'Palm Trees, Pools, and Luaus',
     description: 'For work, I was required to travel to Pearl Harbor in Hawaii. So naturally, I turned that into a solo trip full of activity.\n' +
       '          Adventures/activities include lodging on a boat, rainforest hikes, and scuba dives.',
-    thumbnail: 'assets/img/cayman_sunset.jpg'
+    thumbnail: 'jump.jpg'
   },
 
 
   {
     id: 3,
-    name: 'Yosemite National Park',
+    name: 'yosemite',
     sections: [
       {
         title: '',
         heading: '',
         subHeading: '',
-        videoLink: 'https://www.youtube.com/embed/PHZJvQZk2Yw',
-        imageUrl: 'assets/img/maine.jpg',
+        videoLink: 'Nvf4_HY83_Y',
+        imageUrl: 'maine.jpg',
         content: ''
       }
     ],
@@ -96,7 +96,7 @@ export const ENTRIES: Entry[] = [
     title: 'Yosemite National Park',
     heading: 'Granite, Half-Dome, and Waterfalls',
     description: 'The Half Dome Cable Route hike runs from the valley floor to the top of the dome in 8.2 mi (13 km), with 4,800 ft (1,460 m) of elevation gain.',
-    thumbnail: 'assets/img/maine.jpg'
+    thumbnail: 'yosemite/jump.jpg'
   },
 
 
@@ -108,8 +108,8 @@ export const ENTRIES: Entry[] = [
         title: '',
         heading: '',
         subHeading: '',
-        videoLink: 'https://www.youtube.com/embed/rqNTdFhWpJE',
-        imageUrl: 'assets/img/cayman_scuba.jpg',
+        videoLink: 'rqNTdFhWpJE',
+        imageUrl: 'cayman_scuba.jpg',
         content: ''
       }
     ],
@@ -120,7 +120,7 @@ export const ENTRIES: Entry[] = [
     title: 'Cabo San Lucas',
     heading: 'Sharks, Whales, and Dolphins',
     description: 'Two-day, four-tank scuba diving trip to see a large school of hammerhead sharks',
-    thumbnail: 'assets/img/cayman_scuba.jpg'
+    thumbnail: 'cayman_scuba.jpg'
   },
 
 
@@ -132,8 +132,8 @@ export const ENTRIES: Entry[] = [
         title: '',
         heading: '',
         subHeading: '',
-        videoLink: 'https://www.youtube.com/embed/0jmuhorkdDY',
-        imageUrl: 'assets/img/snowboard.jpg',
+        videoLink: '0jmuhorkdDY',
+        imageUrl: 'snowboard.jpg',
         content: ''
       }
     ],
@@ -144,7 +144,7 @@ export const ENTRIES: Entry[] = [
     title: 'Vancouver',
     heading: 'Winter Wonderland',
     description: 'Weekend snowboarding trip to the best ski resort in North America - Whistler',
-    thumbnail: 'assets/img/snowboard.jpg'
+    thumbnail: 'snowboard.jpg'
   },
 
 
@@ -156,8 +156,8 @@ export const ENTRIES: Entry[] = [
         title: '',
         heading: '',
         subHeading: '',
-        videoLink: 'https://www.youtube.com/embed/7x1KExk52xg',
-        imageUrl: 'assets/img/colorado.jpg',
+        videoLink: '7x1KExk52xg',
+        imageUrl: 'colorado.jpg',
         content: ''
       }
     ],
@@ -168,7 +168,7 @@ export const ENTRIES: Entry[] = [
     title: 'Grand Canyon & Zion National Park',
     heading: 'Red Sandstone and Cliffs',
     description: 'Highlight being the Angel\'s Landing hike and The Narrows. RV\'ing across the country was also a lot of fun',
-    thumbnail: 'assets/img/colorado.jpg'
+    thumbnail: 'colorado.jpg'
   },
 
 
@@ -180,8 +180,8 @@ export const ENTRIES: Entry[] = [
         title: '',
         heading: '',
         subHeading: '',
-        videoLink: 'https://www.youtube.com/embed/PHZJvQZk2Yw',
-        imageUrl: 'assets/img/mic.jpg',
+        videoLink: 'kOa1Cj93rgo',
+        imageUrl: 'mic.jpg',
         content: ''
       }
     ],
@@ -190,9 +190,9 @@ export const ENTRIES: Entry[] = [
     latitude: 123,
     longitude: 321,
     title: 'Washington DC',
-    heading: 'Butter - A Tribe Called Quest',
-    description: 'For your hilarity and entertainment',
-    thumbnail: 'assets/img/mic.jpg'
+    heading: 'Hip Hop Saved My Life - Lupe Fiasco',
+    description: 'For your hilarity and entertainment. ',
+    thumbnail: 'mic.jpg'
   },
 
 
@@ -204,8 +204,8 @@ export const ENTRIES: Entry[] = [
         title: '',
         heading: '',
         subHeading: '',
-        videoLink: 'https://www.youtube.com/embed/PHZJvQZk2Yw',
-        imageUrl: 'assets/img/cpt_morgan_boat.jpg',
+        videoLink: 'CqMOhMlKEgs',
+        imageUrl: 'skydiving.jpg',
         content: ''
       }
     ],
@@ -216,7 +216,7 @@ export const ENTRIES: Entry[] = [
     title: 'San Diego',
     heading: 'Adrenaline Junkie',
     description: 'For your hilarity and entertainment',
-    thumbnail: 'assets/img/cpt_morgan_boat.jpg'
+    thumbnail: 'skydiving.jpg'
   },
 
 
@@ -228,8 +228,8 @@ export const ENTRIES: Entry[] = [
         title: '',
         heading: '',
         subHeading: '',
-        videoLink: 'https://www.youtube.com/embed/PHZJvQZk2Yw',
-        imageUrl: 'assets/img/indian_dress.jpg',
+        videoLink: '4MgHJ0ya1Zo',
+        imageUrl: 'indian_dress.jpg',
         content: ''
       }
     ],
@@ -240,6 +240,6 @@ export const ENTRIES: Entry[] = [
     title: 'Mumbai',
     heading: 'Tanushri\'s and Vivek\'s Wedding',
     description: 'The first wedding of our college crew, this one was legendary because everybody showed up.',
-    thumbnail: 'assets/img/wedding_group.jpg'
+    thumbnail: 'wedding_group.jpg'
   }
 ];

@@ -4,7 +4,7 @@
   <div class="card-box col-md-4 col-sm-6" *ngFor="let entry of entries">
     <div class="card" (click)="navigateToArticle(entry)">
       <div class="header" style="cursor: pointer">
-        <img src="{{entry.thumbnail}}"/>
+        <img src="../../assets/img/{{entry.thumbnail}}"/>
         <div class="filter"></div>
         <div class="actions">
           <button class="btn btn-round btn-fill btn-neutral btn-modern" (click)="navigateToArticle(entry)">

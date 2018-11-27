@@ -16,6 +16,7 @@ import {isNullOrUndefined} from "util";
 export class EntryComponent {
 
   entry: Entry;
+  videoBaseUrl = 'https://www.youtube.com/embed/';
 
   constructor(private sanitizer: DomSanitizer,
               private route: ActivatedRoute) {
