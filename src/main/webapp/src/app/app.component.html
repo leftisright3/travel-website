@@ -5,22 +5,38 @@
     <!-- NAV MENU -->
     <div class="page-description">
       <div class="hipster-container">
-        <nav class="navbar justify-content-between" style='border-width: 0px; font-size: 2.1em; font-family: "Gurmukhi MN";'>
+        <nav class="navbar" style='border-width: 0px; font-size: 1.85em; font-family: "Gurmukhi MN";'>
+
           <!--<a class="navbar-brand"><img src="assets/img/sky_plane.jpg" style="width: 100px;"></a>-->
-          <!--<div class="nav">-->
-          <h3 class="nav-item nav-link active" style="cursor: pointer;"><a style="color: white" href="/">Home</a></h3>
+
+          <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">-->
+            <!--<span class="navbar-toggler-icon"></span>-->
+          <!--</button>-->
+
+          <div class="nav justify-content-between navbar-collapse" id="navContent">
+            <h3 class="nav-item nav-link active" style="cursor: pointer;"><a style="color: white" href="/">Home</a></h3>
             <h3 class="nav-item nav-link" routerLink="map" style="cursor: pointer">Map</h3>
             <h3 class="nav-item nav-link" routerLink="about" style="cursor: pointer">About</h3>
-          <!--</div>-->
-          <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          </form>
+          </div>
+
+          <!--<form class="form-inline">-->
+            <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+          <!--</form>-->
         </nav>
-        <!--<img src="assets/img/profile.jpg" style="width: 300px;">-->
       </div>
     </div>
 
     <router-outlet></router-outlet>
 
+    <div class="page-description-footer">
+      <div class="clearfix"></div><br>
+
+      <h3 id="sharrreTitle">Thank you for shares!</h3>
+      <br>
+      <button id="twitter" class="btn btn-info btn-social btn-twitter btn-round btn-fill btn-wd"><i class="fa fa-twitter"></i></button>
+      <button id="facebook" class="btn btn-info btn-social btn-facebook btn-round btn-fill btn-wd"><i class="fa fa-facebook-square"></i></button>
+
+      <p style="margin-top: 2em;">Copyright &copy; 2018 <a href="http://www.kushanpatelcmu.com">Kushan Patel</a></p>
+    </div>
   </div>
 </div> <!-- end wrapper -->
