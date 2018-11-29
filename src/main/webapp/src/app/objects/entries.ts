@@ -10,7 +10,7 @@ export const ENTRIES: Entry[] = [
         heading: '',
         subHeading: '',
         videoLink: 'GiRlYbNAES0',
-        imageUrl: 'glacier.jpg',
+        imageUrl: 'a/QCq3w7N',
         content: 'We landed in Geneva on a Wedesday. Took a train from Geneva to Verbier. Gondola ride from the bottom of the mountain to the base of the resort. ' +
           'One whole day of snowboarding and that\'s it. I suffered an injury in the afternoon from a bad fall and had to call it a day early.'
       }
@@ -36,7 +36,7 @@ export const ENTRIES: Entry[] = [
         heading: '',
         subHeading: '',
         videoLink: 'FDlvubr5CQE',
-        imageUrl: 'sky_sunset.jpg',
+        imageUrl: 'a/QCq3w7N',
         content: ''
       }
     ],
