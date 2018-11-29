@@ -1,4 +1,4 @@
-import {Component, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import { } from '@types/googlemaps';
 import {Entry} from "../objects/entry";
 import {ENTRIES} from "../objects/entries";
@@ -13,19 +13,13 @@ import {isNullOrUndefined} from "util";
 })
 
 
-export class EntryComponent {
+export class EntryComponent implements OnInit, AfterViewInit{
 
   entry: Entry;
   videoBaseUrl = 'https://www.youtube.com/embed/';
 
   constructor(private sanitizer: DomSanitizer,
               private route: ActivatedRoute) {
-    var el = document.getElementById("albumEmbed");
-    !isNullOrUndefined(el) ? el.remove(): null;
-    var albumEmbed = document.createElement("script");
-    albumEmbed.setAttribute("id", "albumEmbed");
-    albumEmbed.setAttribute("src", "//s.imgur.com/min/embed.js");
-    document.body.appendChild(albumEmbed);
   }
 
   ngOnInit() {
@@ -41,5 +35,14 @@ export class EntryComponent {
       });
     }
     console.log(this.entry);
+  }
+
+  ngAfterViewInit() {
+    var el = document.getElementById("albumEmbed");
+    !isNullOrUndefined(el) ? el.remove(): null;
+    var albumEmbed = document.createElement("script");
+    albumEmbed.setAttribute("id", "albumEmbed");
+    albumEmbed.setAttribute("src", "assets/js/embed.js");
+    document.body.appendChild(albumEmbed);
   }
 }
