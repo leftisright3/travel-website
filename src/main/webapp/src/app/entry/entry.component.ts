@@ -20,6 +20,12 @@ export class EntryComponent {
 
   constructor(private sanitizer: DomSanitizer,
               private route: ActivatedRoute) {
+    var el = document.getElementById("albumEmbed");
+    !isNullOrUndefined(el) ? el.remove(): null;
+    var albumEmbed = document.createElement("script");
+    albumEmbed.setAttribute("id", "albumEmbed");
+    albumEmbed.setAttribute("src", "//s.imgur.com/min/embed.js");
+    document.body.appendChild(albumEmbed);
   }
 
   ngOnInit() {
