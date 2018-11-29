@@ -7,7 +7,7 @@ window.console = window.console || {
   var a, b, c, d, e, f = function () {
       var a = document.getElementById("embedImgur");
       for (var b in a) {
-        var c = /^(http(s)?:){0,1}\/\/([a-z]{1,9}\.)*?(imgur(-dev)?.com)/.exec(a[b].src);
+        var c = /^(http(s)?:){0,1}\/\/([a-z]{1,9}\.)*?(imgur(-dev)?.com)/.exec("http://s.imgur.com");
         if (c) {
           return c[0].indexOf("//s.imgur.com") === -1 && c[3] && c[5] ? c[0] : c[1] ? c[1] + "//imgur.com" : window.location.protocol + "//imgur.com"
         }
@@ -43,7 +43,6 @@ window.console = window.console || {
   }, u = function (a, b, d, e) {
     var f = [l, d, "embed"].join("/"), g = window.location,
       h = "ref=" + encodeURIComponent(g.href || g.protocol + "//" + g.hostname + (g.port ? ":" + g.port : "") + g.pathname + g.search);
-    f = "http://imgur.com/" + f;
     return a ? (f += "?pub=true&" + h, "false" === b && (f += "&context=false")) : f += "false" === b ? "?context=false&" + h : "?" + h, "false" === e && (f += "&analytics=false"), f + "&w=" + c
   }, v = function (f) {
     if (f) {

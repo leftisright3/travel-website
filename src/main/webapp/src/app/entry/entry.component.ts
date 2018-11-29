@@ -13,7 +13,7 @@ import {isNullOrUndefined} from "util";
 })
 
 
-export class EntryComponent implements OnInit, AfterViewInit{
+export class EntryComponent implements OnInit {
 
   entry: Entry;
   videoBaseUrl = 'https://www.youtube.com/embed/';
@@ -22,6 +22,13 @@ export class EntryComponent implements OnInit, AfterViewInit{
 
   constructor(private sanitizer: DomSanitizer,
               private route: ActivatedRoute) {
+    var el = document.getElementById("albumEmbed");
+    !isNullOrUndefined(el) ? el.remove(): null;
+    var albumEmbed = document.createElement("script");
+    albumEmbed.setAttribute("async", "async");
+    albumEmbed.setAttribute("id", "albumEmbed");
+    albumEmbed.setAttribute("src", this.embedLocal);
+    document.body.appendChild(albumEmbed);
   }
 
   ngOnInit() {
@@ -38,13 +45,4 @@ export class EntryComponent implements OnInit, AfterViewInit{
     }
   }
 
-  ngAfterViewInit() {
-    var el = document.getElementById("albumEmbed");
-    !isNullOrUndefined(el) ? el.remove(): null;
-    var albumEmbed = document.createElement("script");
-    albumEmbed.setAttribute("async", "async");
-    albumEmbed.setAttribute("id", "albumEmbed");
-    albumEmbed.setAttribute("src", this.embedLocal);
-    document.body.appendChild(albumEmbed);
-  }
 }
