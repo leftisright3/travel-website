@@ -5,7 +5,7 @@ window.console = window.console || {
   }
 }, function () {
   var a, b, c, d, e, f = function () {
-      var a = document.getElementsByTagName("script");
+      var a = document.getElementById("embedImgur");
       for (var b in a) {
         var c = /^(http(s)?:){0,1}\/\/([a-z]{1,9}\.)*?(imgur(-dev)?.com)/.exec(a[b].src);
         if (c) {
@@ -35,7 +35,7 @@ window.console = window.console || {
     var b = h.getElementsByTagName("head")[0], c = h.createElement("style");
     c.type = "text/css", c.styleSheet ? c.styleSheet.cssText = a : c.appendChild(h.createTextNode(a)), b.appendChild(c)
   }, s = function (a, b) {
-    var d = "#imgur-embed-iframe-pub-" + b + " { height: " + a + "px !important;width:" + c + "px !important;}";
+    var d = "#imgur-embed-iframe-pub-" + b + " { height: " + a + "px !important; width:" + c + "px !important;}";
     r(d)
   }, t = function (a) {
     var b = ".imgur-embed-iframe-pub { box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10); border: 1px solid #ddd; border-radius: 2px;} blockquote.imgur-embed-pub { width: 540px; }";
@@ -44,7 +44,7 @@ window.console = window.console || {
     var f = [l, d, "embed"].join("/"), g = window.location,
       h = "ref=" + encodeURIComponent(g.href || g.protocol + "//" + g.hostname + (g.port ? ":" + g.port : "") + g.pathname + g.search);
     f = "http://imgur.com/" + f;
-    return a ? (f += "?pub=true&" + h, "false" === b && (f += "&context=false"), console.log(a)) : f += "false" === b ? "?context=false&" + h : "?" + h, "false" === e && (f += "&analytics=false"), f + "&w=" + c
+    return a ? (f += "?pub=true&" + h, "false" === b && (f += "&context=false")) : f += "false" === b ? "?context=false&" + h : "?" + h, "false" === e && (f += "&analytics=false"), f + "&w=" + c
   }, v = function (f) {
     if (f) {
       e = h.createElement("iframe");

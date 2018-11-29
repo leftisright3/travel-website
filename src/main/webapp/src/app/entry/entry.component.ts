@@ -17,6 +17,8 @@ export class EntryComponent implements OnInit, AfterViewInit{
 
   entry: Entry;
   videoBaseUrl = 'https://www.youtube.com/embed/';
+  embedLocal = 'assets/js/embed.js';
+
 
   constructor(private sanitizer: DomSanitizer,
               private route: ActivatedRoute) {
@@ -34,15 +36,15 @@ export class EntryComponent implements OnInit, AfterViewInit{
         }
       });
     }
-    console.log(this.entry);
   }
 
   ngAfterViewInit() {
     var el = document.getElementById("albumEmbed");
     !isNullOrUndefined(el) ? el.remove(): null;
     var albumEmbed = document.createElement("script");
+    albumEmbed.setAttribute("async", "async");
     albumEmbed.setAttribute("id", "albumEmbed");
-    albumEmbed.setAttribute("src", "assets/js/embed.js");
+    albumEmbed.setAttribute("src", this.embedLocal);
     document.body.appendChild(albumEmbed);
   }
 }
